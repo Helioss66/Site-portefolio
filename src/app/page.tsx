@@ -16,29 +16,29 @@ const NAV_LINKS = [
 
 const SKILLS = [
   {
-    title: "Frontend",
-    body: "React, Next.js et Tailwind pour construire des interfaces rapides et cohérentes.",
-    icon: CodeBlock,
+    title: "Direction de projet",
+    body: "Cadrer un besoin réel, fixer un scope tenable, arbitrer les choix techniques et de design avec l'IA plutôt que de tout accepter.",
+    icon: Terminal,
     span: "md:col-span-2",
     tint: true,
   },
   {
-    title: "Langages",
-    body: "JavaScript, TypeScript, Python.",
-    icon: Terminal,
-    span: "",
-    tint: false,
-  },
-  {
-    title: "Design",
-    body: "Maquettes et prototypes sur Figma avant chaque projet.",
+    title: "Esprit critique",
+    body: "Tester les cas limites, remettre en cause une méthode qui ne tient pas, refuser un raccourci quand il pose un problème (droit d'auteur, biais).",
     icon: PenNib,
     span: "",
     tint: false,
   },
   {
-    title: "Outils",
-    body: "Git, déploiement Vercel, intégration continue légère.",
+    title: "Rigueur des données",
+    body: "Croiser plusieurs sources, documenter leurs limites, viser la reproductibilité plutôt que l'effet visuel seul.",
+    icon: CodeBlock,
+    span: "",
+    tint: false,
+  },
+  {
+    title: "Mise en production",
+    body: "Versionner, déployer, documenter les décisions pour qu'un projet reste compréhensible longtemps après l'avoir fait.",
     icon: GitBranch,
     span: "md:col-span-2",
     tint: true,
@@ -47,11 +47,18 @@ const SKILLS = [
 
 const PROJECTS = [
   {
+    title: "Atlas géopolitique des forêts",
+    body: "Carte interactive sur la déforestation en Amazonie, dans le bassin du Congo, en Asie du Sud-Est et en forêt boréale : causes, évolution depuis 2001, sources croisées et vérifiables. Projet personnel HGGSP, données et méthodologie sourcées.",
+    tags: ["HTML/CSS/JS", "Leaflet", "Data viz"],
+    href: "https://atlas-geopolitique-forets.netlify.app/",
+    featured: true,
+  },
+  {
     title: "Refonte e-commerce Beauvelli",
     body: "Boutique en ligne pour une marque de vêtements franco-italienne : sélection de coloris et tailles, panier, avis clients. Maquette complète, pas encore publiée.",
     tags: ["HTML/CSS/JS", "Design system", "E-commerce"],
     href: "https://claude.ai/artifact/KjCnNKupsHoVKhuw94vDeJ?org=358432dd-c7b4-4a48-b5f3-1514002d8068",
-    featured: true,
+    featured: false,
   },
   {
     title: "Site du film collectif Hoche Film",
@@ -72,7 +79,7 @@ const PROJECTS = [
 const TIMELINE = [
   { year: "2024", label: "Premiers sites persos, autodidacte" },
   { year: "2025", label: "Projets pour des tiers (clubs, association)" },
-  { year: "2026", label: "Terminale, préparation CPGE" },
+  { year: "2026", label: "Terminale, projets dirigés avec l'IA, préparation CPGE" },
 ];
 
 export default function Home() {
@@ -125,14 +132,15 @@ function Hero() {
     <section className="mx-auto grid max-w-6xl gap-12 px-6 pt-16 pb-24 md:grid-cols-2 md:items-center md:pt-24">
       <Reveal>
         <p className="font-mono text-xs uppercase tracking-[0.18em] text-accent">
-          Développeur web &amp; mobile
+          Direction de projet &amp; littératie IA
         </p>
         <h1 className="mt-4 text-4xl font-medium tracking-tight text-balance md:text-5xl lg:text-6xl">
           Des interfaces claires, pensées pour être utilisées.
         </h1>
         <p className="mt-6 max-w-[42ch] text-base leading-relaxed text-muted">
-          Terminale au lycée Hoche, je construis des sites et applications
-          pour des besoins réels, du premier croquis au code.
+          Terminale au lycée Hoche, je dirige la construction de sites et
+          applications pour des besoins réels, en m&rsquo;appuyant sur l&rsquo;IA
+          et en gardant un regard critique sur chaque choix.
         </p>
         <div className="mt-8 flex flex-wrap items-center gap-4">
           <a
@@ -300,10 +308,17 @@ function About() {
         </h2>
         <p className="mt-4 max-w-[60ch] text-base leading-relaxed text-muted">
           En terminale au lycée Hoche à Versailles, je mène en parallèle des
-          cours des projets de développement web et d&rsquo;applications.
-          J&rsquo;apprends en construisant des outils utiles à des personnes
-          réelles, avec l&rsquo;objectif d&rsquo;intégrer une CPGE à la
-          rentrée prochaine.
+          cours plusieurs projets numériques, dirigés avec l&rsquo;IA et
+          construits avec rigueur : sources vérifiées, cas limites testés,
+          choix documentés plutôt que laissés au hasard.
+        </p>
+        <p className="mt-4 max-w-[60ch] text-base leading-relaxed text-muted">
+          Avant ça, une préparation militaire faite en autodidacte via un
+          CIRFA — recherchée seul, menée à terme malgré les réticences
+          initiales de mes parents, terminée major de section — m&rsquo;a
+          donné une discipline que je retrouve dans la façon dont je mène mes
+          projets aujourd&rsquo;hui. Objectif : intégrer une CPGE à la rentrée
+          prochaine.
         </p>
       </Reveal>
 
@@ -355,7 +370,12 @@ function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 text-sm text-muted md:flex-row">
         <span>© 2026 Hugo T.</span>
         <div className="flex items-center gap-6">
-          <a href="#" className="hover:text-foreground">
+          <a
+            href="https://github.com/Helioss66"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-foreground"
+          >
             GitHub
           </a>
           <a href="#" className="hover:text-foreground">

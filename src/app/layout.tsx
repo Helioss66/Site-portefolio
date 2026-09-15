@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hugo T. - Développeur web & mobile",
+  title: "Hugo T. - Direction de projets numériques & littératie IA",
   description:
-    "Portfolio de Hugo, développeur web et mobile en terminale au lycée Hoche.",
+    "Portfolio de Hugo, qui dirige la conception de sites et applications avec l'IA (rigueur, esprit critique, vérification des sources), en terminale au lycée Hoche.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
