@@ -54,6 +54,13 @@ const PROJECTS = [
     featured: true,
   },
   {
+    title: "Vérificateur d'articles",
+    body: "Outil personnel d'aide à la lecture critique d'articles politiques/géopolitiques : détection de procédés rhétoriques, vérification d'affirmations chiffrées (Wikidata, Banque mondiale) et mise en contexte. Choix assumé de n'utiliser aucun LLM ni API payante, pour rester gratuit et transparent. Projet HGGSP, pas encore déployé publiquement.",
+    tags: ["Node.js/Express", "APIs ouvertes", "Esprit critique"],
+    href: "https://github.com/Helioss66/verificateur-article",
+    featured: false,
+  },
+  {
     title: "Refonte e-commerce Beauvelli",
     body: "Boutique en ligne pour une marque de vêtements franco-italienne : sélection de coloris et tailles, panier, avis clients. Maquette complète, pas encore publiée.",
     tags: ["HTML/CSS/JS", "Design system", "E-commerce"],
