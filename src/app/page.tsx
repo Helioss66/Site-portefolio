@@ -55,9 +55,9 @@ const PROJECTS = [
   },
   {
     title: "Vérificateur d'articles",
-    body: "Outil personnel d'aide à la lecture critique d'articles politiques/géopolitiques : détection de procédés rhétoriques, vérification d'affirmations chiffrées (Wikidata, Banque mondiale) et mise en contexte. Choix assumé de n'utiliser aucun LLM ni API payante, pour rester gratuit et transparent. Projet HGGSP, pas encore déployé publiquement.",
+    body: "Outil personnel d'aide à la lecture critique d'articles politiques/géopolitiques : détection de procédés rhétoriques, vérification d'affirmations chiffrées (Wikidata, Banque mondiale) et mise en contexte. Choix assumé de n'utiliser aucun LLM ni API payante, pour rester gratuit et transparent. Projet HGGSP.",
     tags: ["Node.js/Express", "APIs ouvertes", "Esprit critique"],
-    href: "https://github.com/Helioss66/verificateur-article",
+    href: "https://verificateur-article.onrender.com/",
     featured: false,
   },
   {
